@@ -19,7 +19,7 @@ def predict():
     data.update((x, [y]) for x, y in data.items())
     data_df = pd.DataFrame.from_dict(data)
 
-    # predictions
+    # make predictions
     result = model.predict(data_df)
 
     # send back to browser
